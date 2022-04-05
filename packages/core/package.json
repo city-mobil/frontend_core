@@ -1,0 +1,27 @@
+{
+  "name": "@city/core",
+  "version": "2.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "utils preBuild && rollup -c && utils postBuild",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+    "tsc": "tsc --project tsconfig.json",
+    "lint:all": "concurrently --kill-others-on-fail \"npm:lint\" \"npm:tsc\""
+  },
+  "devDependencies": {
+    "@city/eslint-config": "^2.0.0",
+    "@city/prettier-config": "^2.0.0",
+    "@city/utils": "^2.0.0",
+    "axios": "^0.26.0",
+    "rollup": "^2.67.2"
+  },
+  "peerDependencies": {
+    "axios": "^0.26.0"
+  }
+}

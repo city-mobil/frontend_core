@@ -1,0 +1,31 @@
+{
+  "name": "@city/eslint-config",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "utils preBuild && utils postBuild --forConfig"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "eslint": ">=8",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "@city/prettier-config": "^2.0.0",
+    "@typescript-eslint/parser": "^5.12.0"
+  },
+  "devDependencies": {
+    "@city/utils": "^2.0.0"
+  }
+}

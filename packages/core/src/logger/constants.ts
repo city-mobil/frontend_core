@@ -1,0 +1,2 @@
+export const LOGGER_FLUSH_LOGS_INTERVAL = 5000
+export const LOGGER_BATCH_SIZE = 1000

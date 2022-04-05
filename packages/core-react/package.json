@@ -1,0 +1,34 @@
+{
+  "name": "@city/core-react",
+  "version": "2.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "utils preBuild && rollup -c && utils postBuild",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+    "tsc": "tsc --project tsconfig.json",
+    "lint:all": "concurrently --kill-others-on-fail \"npm:lint\" \"npm:tsc\""
+  },
+  "dependencies": {
+    "@city/core": "^2.0.0",
+    "beautiful-react-hooks": "^1.2.0"
+  },
+  "devDependencies": {
+    "@city/eslint-config": "^2.0.0",
+    "@city/prettier-config": "^2.0.0",
+    "@city/utils": "^2.0.0",
+    "history": "^4.10.1",
+    "rollup": "^2.67.2"
+  },
+  "peerDependencies": {
+    "axios": "^0.26.0",
+    "history": "^4.10.1",
+    "react": "^17",
+    "react-dom": "^17"
+  }
+}

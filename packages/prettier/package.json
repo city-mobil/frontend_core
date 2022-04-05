@@ -1,0 +1,17 @@
+{
+  "name": "@city/prettier-config",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "utils preBuild && utils postBuild --forConfig"
+  },
+  "peerDependencies": {
+    "prettier": "^2.5.1"
+  },
+  "devDependencies": {
+    "@city/utils": "^2.0.0"
+  }
+}

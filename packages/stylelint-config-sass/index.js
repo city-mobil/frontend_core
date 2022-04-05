@@ -1,0 +1,33 @@
+"use strict";
+
+module.exports = {
+  plugins: ["stylelint-scss", "stylelint-order"],
+  extends: [
+    "stylelint-config-recommended",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-css-modules",
+    "stylelint-config-idiomatic-css",
+    "stylelint-config-prettier",
+  ],
+  rules: {
+    "declaration-no-important": true,
+    "selector-type-no-unknown": [
+      true,
+      {
+        ignore: ["custom-elements"],
+      },
+    ],
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "no-missing-end-of-source-newline": true,
+    "rule-empty-line-before": ["always", { except: ["first-nested"] }],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        except: ["blockless-after-blockless"],
+      },
+    ],
+    "declaration-block-trailing-semicolon": "always",
+  },
+  syntax: "scss",
+};
